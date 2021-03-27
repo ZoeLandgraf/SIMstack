@@ -101,7 +101,14 @@
              <img src="img/method_diagram.png" style="width:100%">
          </div>
 
-        Instance segmentation is formulated as a 3D Hough Voting task: Our network predicts a center-voting vector field
+        Instance segmentation is formulated as a 3D Hough Voting task: The instance branch of our network
+        predicts a vector field in which each voxel `votes' for the object it belongs to by predicting a
+        3D unit vector from its own centroid to the object's centroid.
+
+        <div class="row align-items-center">
+                <h5>Overview</h5>
+             <img src="img/Hough_Voting.png" style="width:100%">
+         </div>
 
         </p>
     </div>
