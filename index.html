@@ -32,11 +32,12 @@
 
 <div class="container">
     <div class="section">
-        <div class="row align-items-center">
-            <img src="img/Teaser_Image.png" style="width:100%">
-<!--            <iframe class='video' src="https://www.youtube.com/embed/Q2fLWGBeaiI" frameborder="0"-->
-<!--                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
-<!--                    allowfullscreen></iframe>-->
+       <div class="row align-items-center">
+            <div class="col justify-content-center text-center">
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/teaser_demo_video.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
         <hr>
         <p>
@@ -53,6 +54,32 @@
             depth view, probabilistically sampling proposals for the occluded region from the learned latent space.
         </p>
     </div>
+
+     <div class="section">
+        <h2>Predicting 3D shape and instance segmentation for unknown, stacked objects</h2>
+           <hr>
+        <p>
+
+            The classical approach to generate 3D shapes from depth images involves taking images from all sides of an
+            object and fusing the re-projected points into a common 3D representation such as
+            a truncated signed distance function (TSDF). This requires comprehensive scanning and still won't guarantee
+            that all required viewpoints for a watertight surface reconstruction can be reached.
+            Reconstructing the full 3D shape becomes particularly challenging for compositional scenes such as stacked
+            objects in which objects occlude each other.
+
+            Shape reconstruction is important for scene understanding, estimating free space and can be useful for tracking,
+            but in order to allow for interactive tasks such as object manipulation, an object-level understanding of
+            the scene is crucial; this requires instance segmentation. With SIMstack we propose the first approach to
+            provide both 3D shape and instance decomposition for multiple stacked objects from a
+            single depth view.  Our model reconstructs and segments the visible regions with high fidelity while generating shape and instance
+            proposals for occluded regions, conditioned on the visible information about the scene.
+            This allows for fast reconstruction and decomposition in the visible area and fast approximate object-level reasoning for the occluded areas.
+
+            Our approach is furthermore designed to work for unknown objects, by providing class-agnostic instance segmentation.
+
+        </p>
+    </div>
+
     <div class="section">
         <h2>Learning a joint shape and instance encoding for object stacks</h2>
     </div>
