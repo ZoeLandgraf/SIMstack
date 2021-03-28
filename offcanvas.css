@@ -35,7 +35,6 @@ h2 {
 }
 
 h10 {
-    font-size: 16px;
     text-align: center;
     align: center;
 
@@ -55,6 +54,10 @@ h10 {
 
 .jumbotron h2 {
   font-size: 36px;
+}
+
+.jumbotron h10 {
+  font-size: 16px;
 }
 
 .section {
