@@ -66,21 +66,21 @@
             a truncated signed distance function (TSDF). This requires comprehensive scanning and still won't guarantee
             that all required viewpoints for a watertight surface reconstruction can be reached. 3D shape reconstruction
             becomes particularly challenging for composite scenes in which objects occlude each other.
-            <br>
+            <br><br>
             Shape reconstruction is important for scene understanding, estimating free space and can be useful for tracking,
             but in order to allow for interactive tasks such as object manipulation, an object-level understanding of
             the scene is crucial; this requires instance segmentation. <i>With SIMstack we propose the first approach to
             provide both 3D shape and instance decomposition for multiple stacked objects from a
             single depth view. </i>
-            <br>
+            <br><br>
             Our model reconstructs and segments the visible regions with high fidelity while generating shape and instance
             proposals for occluded regions, conditioned on the visible information obtained from depth.
             This allows for fast reconstruction and decomposition in the visible area and fast approximate object-level
             reasoning for the occluded areas.
-            <br>
+            <br><br>
             Our approach is designed to work for unknown objects, by providing class-agnostic
             instance segmentation and training on scenes composed of primitive shapes (SuperQuadrics).
-            <br>
+            <br><br>
             Our method provides a quick estimate of shape and instance decomposition,
             which could be used for downstream applications (e.g to initialise a multi-view scanning system
             to capture more detail) and allows for fast multi-object reasoning,
