@@ -75,15 +75,15 @@
             but in order to allow for interactive tasks such as object manipulation, an object-level understanding of
             the scene is crucial; this requires instance segmentation. <i><b>With SIMstack we propose the first approach to
             provide both 3D shape and instance decomposition for multiple (convex) stacked objects from a
-            single depth view. </b></i>
-            <br><br>
-            Our model reconstructs and segments the visible regions with high fidelity while generating shape and instance
-            proposals for occluded regions, conditioned on the visible information obtained from depth.
-            This allows for fast reconstruction and decomposition in the visible area and fast approximate object-level
-            reasoning for the occluded areas.
-            By providing class-agnostic
+            single depth view. </b></i> By providing class-agnostic
             instance segmentation and training on scenes composed of primitive shapes (SuperQuadrics),
             our approach is designed to work for unknown objects.
+<!--            <br><br>-->
+<!--            Our model reconstructs and segments the visible regions with high fidelity while generating shape and instance-->
+<!--            proposals for occluded regions, conditioned on the visible information obtained from depth.-->
+<!--            This allows for fast reconstruction and decomposition in the visible area and fast approximate object-level-->
+<!--            reasoning for the occluded areas.-->
+
             <br><br>
             SIMstack provides fast 3D shape and instance decomposition into convex primitives,
             which could be used for downstream applications (e.g to initialise a multi-view scanning system
