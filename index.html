@@ -65,12 +65,12 @@
            <hr>
         <p>
 
-            The classical approach to generate 3D shapes from depth images involves taking images from all sides of an
-            object and fusing the re-projected points into a common 3D representation such as
-            a truncated signed distance function (TSDF). This requires comprehensive scanning and still won't guarantee
-            that all required viewpoints for a watertight surface reconstruction can be reached. 3D shape reconstruction
-            becomes particularly challenging for composite scenes in which objects occlude each other.
-            <br>
+<!--            The classical approach to generate 3D shapes from depth images involves taking images from all sides of an-->
+<!--            object and fusing the re-projected points into a common 3D representation such as-->
+<!--            a truncated signed distance function (TSDF). This requires comprehensive scanning and still won't guarantee-->
+<!--            that all required viewpoints to generate a watertight surface reconstruction can be reached. 3D shape reconstruction-->
+<!--            becomes particularly challenging for composite scenes in which objects occlude each other.-->
+<!--            <br>-->
             Shape reconstruction is important for scene understanding, estimating free space and can be useful for tracking,
             but in order to allow for interactive tasks such as object manipulation, an object-level understanding of
             the scene is crucial; this requires instance segmentation. <i><b>With SIMstack we propose the first approach to
@@ -78,11 +78,11 @@
             single depth view. </b></i> By providing class-agnostic
             instance segmentation and training on scenes composed of primitive shapes (SuperQuadrics),
             our approach is designed to work for unknown objects.
-<!--            <br><br>-->
-<!--            Our model reconstructs and segments the visible regions with high fidelity while generating shape and instance-->
-<!--            proposals for occluded regions, conditioned on the visible information obtained from depth.-->
-<!--            This allows for fast reconstruction and decomposition in the visible area and fast approximate object-level-->
-<!--            reasoning for the occluded areas.-->
+            <br><br>
+            Our model reconstructs and segments the visible regions with high fidelity while generating shape and instance
+            proposals for occluded regions, conditioned on the visible information obtained from depth.
+            This allows for fast reconstruction and decomposition in the visible area and fast approximate object-level
+            reasoning for occluded areas.
 
             <br><br>
             SIMstack provides fast 3D shape and instance decomposition into convex primitives,
@@ -137,7 +137,7 @@
     <div class="section">
         <h2>Results</h2>
         <hr>
-        <p>We test SIMstack scenes with up to 7 objects. Although our method is only trained on scenes with
+        <p>We test SIMstack on scenes with up to 7 objects. Although our method is only trained on scenes with
         3 to 4 objects, it generalises to more cluttered scenes.</p>
 
 
@@ -148,7 +148,8 @@
 
         </div>
         <hr>
-        <p>Our method can hypothetise fully occluded objects when generating scene reconstruction and instance segmentation</p>
+        <p>Our method can hypothetise fully occluded objects when generating 3D shape and instance segmentation.
+            Sampling from the latent space produces different proposals of hidden objects</p>
 
         <div class="row align-items-center">
 
@@ -204,6 +205,32 @@
 
         </div>
         </div>
+
+
+    <div class="section">
+        <h2>Bibtex</h2>
+        <hr>
+        <div class="bibtexsection">
+            @inproceedings{landgraf2021SIMstack,
+                author = {Landgraf, Zoe
+                          and Scona, Raluca
+                          and Laidlow, Tristan
+                          and James, Stephen
+                          and Leutenegger, Stefan
+                          and Davison, Andrew J.},
+                title = {Implicit Neural Representations
+                          with Periodic Activation Functions},
+                booktitle = {Proc. NeurIPS},
+                year={2020}
+            }
+        </div>
+    </div>
+
+    <hr>
+
+<!--    <footer>-->
+<!--        <p>Send feedback and questions to <a href="http://web.stanford.edu/~sitzmann/">Zoe Landgraf</a></p>-->
+<!--    </footer>-->
 
 
 </div>
