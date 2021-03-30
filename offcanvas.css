@@ -50,11 +50,11 @@ h10 {
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
-    background-color: #8064A2;
-    border-color: #8064A2;
+    background-color: #009999;
+    border-color: #009999;
 }
 
-
+/*
 .btn {
     font-size: 18px;
     background-color: #009999 !important;
@@ -67,7 +67,7 @@ h10 {
 
 .btn-disabled {
     /*background-color: #009999;*/
-}
+}*/
 
 .jumbotron h2 {
   font-size: 36px;
