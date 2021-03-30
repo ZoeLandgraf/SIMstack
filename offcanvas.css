@@ -65,6 +65,11 @@ h10 {
     background-color: #009999 !important;
 }
 
+.btn-group:hover{
+    font-size: 18px;
+    background-color: #000b3b3 !important;
+}
+
 .btn-disabled {
     /*background-color: #009999;*/
 }
